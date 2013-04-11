@@ -1,5 +1,5 @@
 class Room < ActiveRecord::Base
-  attr_accessible :description, :title
+  attr_accessible :description, :title, :user_id
   validates :description, :title, :presence => true
   belongs_to :user
   has_many :sms, :class_name=>'Sms', :dependent=>:destroy

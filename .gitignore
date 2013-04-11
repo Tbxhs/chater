@@ -8,6 +8,7 @@
 #Ingore db
 /db/development.sqlite3
 /db/schema.rb
+config/database.yml.local
 
 #Ingore log
 /log/*.log

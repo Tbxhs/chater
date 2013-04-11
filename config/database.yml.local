@@ -20,6 +20,14 @@
    <<: *common
    
 #production config    
- production:
+production:
+   database: chater_test
    <<: *common
-   database: chater
+  #adapter: postgresql
+  #encoding: unicode
+  #database: test-postgres_production
+  #pool: 5
+  #username: test-postgres
+  #password:
+  #host: 127.0.0.1
+
