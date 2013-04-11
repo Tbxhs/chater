@@ -1,33 +1,32 @@
 # in order to DRY,we can use common config 
 # common config
- common: &common
-   adapter: mysql2
-   encoding: utf8
-   pool: 10
-   username: root
-   password: password
-   host: localhost
-   port: 3306
+common: &common
+  adapter: mysql2
+  encoding: utf8
+  pool: 10
+  username: root
+  password: password
+  host: localhost
+  port: 3306
  
 # development config
- development:
-   database: chater
-   <<: *common
+development:
+  database: chater
+  <<: *common
  
 # test config
- test:
-   database: chater_test
-   <<: *common
+test:
+  database: chater_test
+  <<: *common
    
 #production config    
 production:
-   database: chater_test
-   <<: *common
-  #adapter: postgresql
-  #encoding: unicode
-  #database: test-postgres_production
-  #pool: 5
-  #username: test-postgres
-  #password:
-  #host: 127.0.0.1
+  database: chater_test
+  adapter: mysql2
+  encoding: utf8
+  pool: 10
+  username: root
+  password: password
+  host: localhost
+  port: 3306
 
