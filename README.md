@@ -1,7 +1,9 @@
 ##What is Chater?
 Chater 是一个在线聊天室，一个实时web应用，一个基础实践.....
-演示地址：
-http://chatter9.herokuapp.com
+<br/>
+* 演示地址：
+[heroku](http://chatter9.herokuapp.com)
+[chater](http://weidaxue.me:4000)
 
 ##How to run Chater?
 
